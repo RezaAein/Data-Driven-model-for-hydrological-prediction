@@ -32,7 +32,7 @@ Model Performance: The combination of CNN with LSTM and GRU did not lead to an i
 
   
 	Model           MSE Test	            RMSE VALIDATION
- 	LSETM           0.00093295	             0.0527
+ 	LSTM           0.00093295	             0.0527
 	GRU             0.00084916	             0.0519
  	CNN             0.0011351	             0.0556
  	CNN-GRU         0.001193917	             0.0549
