@@ -20,26 +20,11 @@ In this project, the daily discharge of the Shapur River, located in the Helleh 
 
 For this purpose, the project applies five models—CNN, LSTM, GRU, CNN-LSTM, and CNN-GRU—to forecast the flow of the Shapur River at Jareh station. The results will be compared in terms of predictive accuracy and mean squared error (MSE) criteria. The approach closely follows the work of Muhammad et al. (2019), who found that while LSTM models offered slightly better performance, GRU models provided comparable accuracy with faster execution, making GRU an efficient and reliable choice for hydrological applications.
 
-1- To begin, I loaded my dataset into the Python environment and perform any necessary pre-processing.
+1- To begin, I loaded my dataset into the Python environment and performed any necessary pre-processing.
 
 2- In multivariate time series forecasting, the lookback window or window size specifies the number of previous time steps used to predict the current value. This helps capture patterns over a defined period to improve prediction accuracy. I created a function that takes in the dataset and window size, then generates features and labels based on this lookback period.
 
 3- To develop the five mentioned models (CNN, LSTM, GRU, CNN-LSTM, and CNN-GRU) for the given dataset, I  used TensorFlow and Keras, which are popular libraries for building deep learning models. 
 
-4- The comparison of the results obtained from the different models revealed two key findings:
-
-Model Performance: The combination of CNN with LSTM and GRU did not lead to an improvement in accuracy. In fact, it resulted in a decrease in performance compared to the two simpler models, LSTM and GRU. This trend is illustrated in the table below.
-
-  
-	Model           MSE Test	            RMSE VALIDATION
- 	LSTM           0.00093295	             0.0527
-	GRU             0.00084916	             0.0519
- 	CNN             0.0011351	             0.0556
- 	CNN-GRU         0.001193917	             0.0549
-	CNN-LSTM        0.0011489960	             0.0557
-
-	
-
-
-Validation of Previous Research: Additionally, when examining the results of the study by Muhammad et al. (2019), the findings of this project can largely be viewed as supportive of their conclusions. It is important to note that Muhammad et al. utilized a broader range of hybrid models, including a hybrid model that combined GRU and LSTM. Their results indicated that the GRU model outperformed some of these combinations in certain river systems.
+4- The comparison of the results obtained from the different models
 
